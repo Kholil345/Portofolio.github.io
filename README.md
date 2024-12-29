@@ -16,7 +16,7 @@ Portofolio resmi M Holil, seorang Web Developer dan Programmer PHP yang mengkhus
 - **JavaScript**: Untuk interaktivitas tambahan.
 
 ## Cara Mengakses
-1. Kunjungi [https://username.github.io/mholil-portfolio](https://username.github.io/mholil-portfolio) setelah dihosting di GitHub Pages.
+1. Kunjungi (https://github.com/Kholil345/Portofolio.github.io) setelah dihosting di GitHub Pages.
 2. Navigasikan melalui menu untuk menjelajahi berbagai bagian portofolio.
 
 ## Struktur Folder

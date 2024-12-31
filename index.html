@@ -7,271 +7,133 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #2c2c2c;
-      color: #e0e0e0;
-    }
-    .navbar-brand {
-    font-family: 'Playfair Display', serif;
-    color: #bb86fc !important;
-  }
-  .navbar-nav .nav-link {
-    color: #e0e0e0 !important;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  .navbar-nav .nav-link:hover {
-    color: #03dac6 !important;
-  }
-  .navbar-toggler {
-    border-color: #bb86fc;
-  }
-  .navbar-toggler-icon {
-    background-color: #bb86fc;
-  }
-  .bi {
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-  }
-  .bi:hover {
-    transform: scale(1.2);
-  }
-    .section-title {
-      font-size: 2.2rem;
-      font-family: 'Playfair Display', serif;
-      text-align: center;
-      margin: 30px 0;
-      color: #bb86fc;
-    }
-    .section-title::after {
-      content: '';
-      display: block;
-      width: 50px;
-      height: 4px;
-      background-color: #03dac6;
-      margin: 10px auto;
-    }
-    .footer {
-      background-color: #1f1f1f;
-      color: #bb86fc;
-      text-align: center;
-      padding: 20px;
-    }
-    .education-card {
-      background-color: #3c3c3c;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .education-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
-    }
-    .education-card .card-body {
-      text-align: center;
-      color: #e0e0e0;
-      padding: 20px;
-    }
-    .education-card .card-title {
-      font-size: 1.4rem;
-      color: #bb86fc;
-      font-family: 'Playfair Display', serif;
-    }
-    .education-card .card-text {
-      font-size: 1rem;
-      color: #ffffff;
-    }
-    .education-icon {
-      font-size: 2rem;
-      color: #03dac6;
-      margin-bottom: 10px;
-    }
-    .education-timeline {
-      border-left: 3px solid #bb86fc;
-      margin-top: 20px;
-      padding-left: 20px;
-    }
-    .timeline-item {
-      margin-bottom: 20px;
-      position: relative;
-    }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -7px;
-      top: 5px;
-      background-color: #03dac6;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-    }
-    .about-image {
-      border-radius: 10px;
-      max-width: 100%;
-      height: auto;
-    }
-    .skill-card {
-    padding: 20px;
-    border-radius: 10px;
-    background: #f8f9fa;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  .skill-icon {
-    font-size: 3rem;
-    color: #6c757d;
-    margin-bottom: 15px;
-  }
-  .skill-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #343a40;
-  }
-  .skill-text {
-    font-size: 0.7rem;
-    color: #495057;
-  }
-    @media (max-width: 768px) {
-      .about-image {
-        max-width: 150px;
-      }
-      .about-content {
-        margin-top: 20px;
-      }
-    }
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "url": "https://kholil345.github.io/Portofolio.github.io/",
-          "name": "M Holil Portfolio",
-          "description": "Portofolio resmi M Holil, seorang Web Developer dan Programmer PHP yang ahli dalam solusi aplikasi modern.",
-          "publisher": {
-            "@type": "Person",
-            "name": "M Holil",
-            "url": "https://kholil345.github.io/Portofolio.github.io/",
-            "sameAs": [
-              "https://linkedin.com/in/mholil",
-              "https://instagram.com/@kholil_349"
-            ]
-          }
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Universitas Yatsi Madani",
-          "url": "https://universitasyatsimadani.ac.id",
-          "description": "Institusi pendidikan yang berfokus pada pengembangan teknologi dan ilmu pengetahuan.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Jl. Pendidikan No.1",
-            "addressLocality": "Tangerang",
-            "addressRegion": "Banten",
-            "postalCode": "15111",
-            "addressCountry": "ID"
-          },
-          "sameAs": [
-            "https://facebook.com/universitasyatsimadani",
-            "https://twitter.com/universitasyatsimadani"
-          ]
-        },
-        {
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://kholil345.github.io/Portofolio.github.io/",
+        "name": "M Holil Portfolio",
+        "description": "Portofolio resmi M Holil, seorang Web Developer dan Programmer PHP yang ahli dalam solusi aplikasi modern.",
+        "publisher": {
           "@type": "Person",
           "name": "M Holil",
-          "url": "https://kholil345.github.io/Portofolio.github.io",
-          "image": "https://kholil345.github.io/Portofolio.github.io/@Kholil_349 (2).png",
-          "jobTitle": "Web Developer dan Programmer PHP",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Universitas Yatsi Madani"
-          },
+          "url": "https://kholil345.github.io/Portofolio.github.io/",
           "sameAs": [
             "https://linkedin.com/in/mholil",
-            "https://instagram.com/@kholil_349",
-            "https://kholil345.github.io/Portofolio.github.io/"
-          ],
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Universitas Yatsi Madani"
-          }
-        },
-        {
-          "@type": "LocalBusiness",
-          "name": "Universitas Yatsi Madani",
-          "url": "https://universitasyatsimadani.ac.id",
-          "image": "https://universitasyatsimadani.ac.id/logo.png",
-          "description": "Pusat pendidikan tinggi di Tangerang, berkomitmen pada pengembangan teknologi dan inovasi.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Jl. Pendidikan No.1",
-            "addressLocality": "Tangerang",
-            "addressRegion": "Banten",
-            "postalCode": "15111",
-            "addressCountry": "ID"
-          },
-          "sameAs": [
-            "https://linkedin.com/company/universitasyatsimadani",
-            "https://instagram.com/universitasyatsimadani"
-          ],
-          "telephone": "+62 21 12345678"
+            "https://instagram.com/@kholil_349"
+          ]
         }
-      ]
-    }
-    </script>
-    
-</head>
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Universitas Yatsi Madani",
+        "url": "https://universitasyatsimadani.ac.id",
+        "description": "Institusi pendidikan yang berfokus pada pengembangan teknologi dan ilmu pengetahuan.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Pendidikan No.1",
+          "addressLocality": "Tangerang",
+          "addressRegion": "Banten",
+          "postalCode": "15111",
+          "addressCountry": "ID"
+        },
+        "sameAs": [
+          "https://facebook.com/universitasyatsimadani",
+          "https://twitter.com/universitasyatsimadani"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "M Holil",
+        "url": "https://kholil345.github.io/Portofolio.github.io",
+        "image": "https://kholil345.github.io/Portofolio.github.io/@Kholil_349 (2).png",
+        "jobTitle": "Web Developer dan Programmer PHP",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Universitas Yatsi Madani"
+        },
+        "sameAs": [
+          "https://linkedin.com/in/mholil",
+          "https://instagram.com/@kholil_349",
+          "https://kholil345.github.io/Portofolio.github.io/"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Universitas Yatsi Madani"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Universitas Yatsi Madani",
+        "url": "https://universitasyatsimadani.ac.id",
+        "image": "https://universitasyatsimadani.ac.id/logo.png",
+        "description": "Pusat pendidikan tinggi di Tangerang, berkomitmen pada pengembangan teknologi dan inovasi.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Pendidikan No.1",
+          "addressLocality": "Tangerang",
+          "addressRegion": "Banten",
+          "postalCode": "15111",
+          "addressCountry": "ID"
+        },
+        "sameAs": [
+          "https://linkedin.com/company/universitasyatsimadani",
+          "https://instagram.com/universitasyatsimadani"
+        ],
+        "telephone": "+62 21 12345678"
+      }
+    ]
+  }
+  </script>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1f1f1f; padding: 1rem 0;">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <span style="font-size: 1.5rem; font-weight: bold;">M Holil</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#about">
-                  <i class="bi bi-person-circle me-2"></i>Tentang Saya
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#education">
-                  <i class="bi bi-book me-2"></i>Pendidikan
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#skills">
-                  <i class="bi bi-tools me-2"></i>Keahlian
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#contact">
-                  <i class="bi bi-envelope me-2"></i>Kontak
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 
-  <section class="hero">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1f1f1f; padding: 1rem 0;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span style="font-size: 1.5rem; font-weight: bold;">M Holil</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#about">
+              <i class="bi bi-person-circle me-2"></i>Tentang Saya
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#education">
+              <i class="bi bi-book me-2"></i>Pendidikan
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#skills">
+              <i class="bi bi-tools me-2"></i>Keahlian
+            </a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero fade-in" data-aos="fade-up">
     <div class="container-fluid p-0">
-      <img src="mrpace.png" alt="Gambar Hero" class="img-fluid hero-img">
+      <img src="gambar/mrpace.png" alt="Gambar Hero" class="img-fluid hero-img">
     </div>
   </section>
 
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 fade-in" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title">Tentang Saya</h2>
       <div class="row align-items-center flex-column-reverse flex-lg-row">
@@ -282,55 +144,126 @@
             <a href="https://linkedin.com" target="_blank" class="btn btn-outline-light btn-sm me-2">
               <i class="bi bi-linkedin me-1"></i> LinkedIn
             </a>
-            <a href="https://wa.me/" target="_blank" class="btn btn-outline-success btn-sm">
-              <i class="bi bi-whatsapp me-1"></i> WhatsApp
+            <a href="cv/AhmadDasukiCV.pdf" download target="_blank" class="btn btn-outline-success btn-sm">
+              <i class="bi bi-download me-1"></i> Download CV
             </a>
-          </div>          
+          </div>
         </div>
         <div class="col-lg-5 text-center">
-          <img src="@Kholil_349 (2).png" alt="Gambar Tentang Saya" class="img-fluid about-image">
+          <img src="gambar/@Kholil_349 (2).png" alt="Gambar Tentang Saya" class="img-fluid about-image">
+        </div>
+      </div>
+      <div class="about-extra">
+        <h4>Informasi Tambahan</h4>
+        <ul>
+          <li data-aos="fade-right"><i class="bi bi-check-circle"></i> Berpengalaman lebih dari 5 tahun di bidang pengembangan web.</li>
+          <li data-aos="fade-right"><i class="bi bi-check-circle"></i> Aktif berkolaborasi dalam proyek open-source.</li>
+          <li data-aos="fade-right"><i class="bi bi-check-circle"></i> Memiliki sertifikasi profesional di bidang PHP dan pengembangan aplikasi.</li>
+          <li data-aos="fade-right"><i class="bi bi-check-circle"></i> Hobi: Membaca, menulis blog teknologi, dan bermain gitar.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-5 bg-dark text-light education-section fade-in" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Pendidikan</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <div class="card education-card">
+            <div class="card-body">
+              <h5 class="card-title">Mis Nurul Hidayah 1</h5>
+              <p class="card-text">2011 - 2017</p>
+              <p class="card-text">Menanamkan nilai-nilai dasar pendidikan dan budi pekerti sejak usia dini.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <div class="card education-card">
+            <div class="card-body">
+              <h5 class="card-title">MTSN 7 Tangerang</h5>
+              <p class="card-text">2017 - 2020</p>
+              <p class="card-text">Mengembangkan pemahaman akademis dan sosial dalam lingkungan sekolah menengah pertama.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <div class="card education-card">
+            <div class="card-body">
+              <h5 class="card-title">SMAS Bina Bhakti Kronjo</h5>
+              <p class="card-text">2020 - 2023</p>
+              <p class="card-text">Memperdalam ilmu pengetahuan di tingkat SMA dan meraih prestasi akademik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 mx-auto" data-aos="zoom-in">
+          <div class="card education-card">
+            <div class="card-body">
+              <h5 class="card-title">Universitas Yatsi Madani</h5>
+              <p class="card-text">2023 - Sekarang</p>
+              <p class="card-text">Mempelajari teknologi terkini dan mempersiapkan diri menjadi profesional di dunia kerja.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="education" class="py-5 bg-dark text-light">
+  <section id="skills" class="py-5 bg-light text-dark" data-aos="fade-up">
     <div class="container">
-      <h2 class="section-title">Pendidikan</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card education-card">
-            <div class="card-body">
-              <div class="education-icon mb-3">📘</div>
-              <h5 class="card-title">2011-2017</h5>
-              <p class="card-text">Mis Nurul Hidayah 1</p>
+      <h2 class="section-title">Keahlian</h2>
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center mb-4" data-aos="fade-right">
+          <i class="bi bi-code-slash skill-icon"></i>
+          <div class="w-100">
+            <h5>HTML</h5>
+            <div class="skill-container">
+              <div class="skill-bar" style="width: 90%;"></div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card education-card">
-            <div class="card-body">
-              <div class="education-icon mb-3">🏫</div>
-              <h5 class="card-title">2017-2020</h5>
-              <p class="card-text">MTSN 7 Tangerang</p>
+        <div class="col-md-6 d-flex align-items-center mb-4" data-aos="fade-right">
+          <i class="bi bi-palette skill-icon"></i>
+          <div class="w-100">
+            <h5>CSS</h5>
+            <div class="skill-container">
+              <div class="skill-bar" style="width: 85%;"></div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card education-card">
-            <div class="card-body">
-              <div class="education-icon mb-3">🎓</div>
-              <h5 class="card-title">2020-2023</h5>
-              <p class="card-text">SMAS Bina Bhakti Kronjo</p>
+        <div class="col-md-6 d-flex align-items-center mb-4" data-aos="fade-right">
+          <i class="bi bi-cpu skill-icon"></i>
+          <div class="w-100">
+            <h5>JavaScript</h5>
+            <div class="skill-container">
+              <div class="skill-bar" style="width: 80%;"></div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card education-card">
-            <div class="card-body">
-              <div class="education-icon mb-3">📖</div>
-              <h5 class="card-title">2023-Sekarang</h5>
-              <p class="card-text">Universitas Yatsi Madani</p>
+        <div class="col-md-6 d-flex align-items-center mb-4" data-aos="fade-right">
+          <i class="bi bi-terminal skill-icon"></i>
+          <div class="w-100">
+            <h5>PHP</h5>
+            <div class="skill-container">
+              <div class="skill-bar" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center mb-4" data-aos="fade-right">
+          <i class="bi bi-database skill-icon"></i>
+          <div class="w-100">
+            <h5>MySQL</h5>
+            <div class="skill-container">
+              <div class="skill-bar" style="width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center mb-4" data-aos="fade-right">
+          <i class="bi bi-bootstrap skill-icon"></i>
+          <div class="w-100">
+            <h5>Bootstrap</h5>
+            <div class="skill-container">
+              <div class="skill-bar" style="width: 85%;"></div>
             </div>
           </div>
         </div>
@@ -338,31 +271,18 @@
     </div>
   </section>
   
-
-  <section id="skills" class="py-5 bg-light text-dark">
+  <section id="certifications" class="py-5" data-aos="fade-up">
     <div class="container">
-      <h2 class="section-title text-dark">Keahlian</h2>
-      <div class="row g-4">
-        <div class="col-md-4 text-center">
-          <div class="skill-card">
-            <div class="skill-icon">💻</div>
-            <h5 class="skill-title">Web Development</h5>
-            <p class="skill-text">Menguasai HTML, CSS, JavaScript</p>
-          </div>
+      <h2 class="section-title">Sertifikasi</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <img src="sertifikat/sertifikat1.jpg" alt="Certified Web Developer" class="certification-img">
         </div>
-        <div class="col-md-4 text-center">
-          <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h5 class="skill-title">Backend Development</h5>
-            <p class="skill-text">Berpengalaman dengan PHP dan MySQL</p>
-          </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <img src="sertifikat/sertifikat2.jpg" alt="PHP Developer Certification" class="certification-img">
         </div>
-        <div class="col-md-4 text-center">
-          <div class="skill-card">
-            <div class="skill-icon">📱</div>
-            <h5 class="skill-title">Responsiveness</h5>
-            <p class="skill-text">Membuat desain yang responsif dan mobile-friendly</p>
-          </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <img src="sertifikat/sertifikat3.jpg" alt="MySQL Database Certification" class="certification-img">
         </div>
       </div>
     </div>
@@ -373,5 +293,31 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const loadingScreen = document.getElementById("loadingScreen");
+
+      setTimeout(() => {
+        loadingScreen.classList.add("hidden");
+      }, 1500);
+
+      document.body.classList.add("loaded");
+
+      const fadeInElements = document.querySelectorAll(".fade-in");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      fadeInElements.forEach((el) => observer.observe(el));
+    });
+  </script>
 </body>
 </html>
